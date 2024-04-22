@@ -606,8 +606,7 @@
             })
             .then(text => {
               const images = text.split('\n').map(filename => filename.trim());
-            })        
-            // Function to generate cards
+              // Function to generate cards
             function generateCards() {
               const cardContainer = document.getElementById('card-container');
               images.forEach((image, index) => {
@@ -636,6 +635,7 @@
               const card = document.getElementById(`card-${index}`);
               card.classList.toggle('hovered');
             }
+            })
           </script>
 
           <script>
