@@ -58,14 +58,12 @@ function sendTest() {
             document.getElementById('sendButton').style.backgroundColor = '';
             document.getElementById('sendButton').style.border = '';
         } else {
-            document.getElementById('emailWithTitle').value = '';
-            document.getElementById('dobWithTitle').value = '';
+            document.getElementById('almessage').innerHTML = "Incorrect Password!"
             var box2 = document.getElementById("box2");
             box2.style.display = "inline-block";
             setTimeout(function () {
                 box2.style.display = "none";
             }, 3000);
-            $('#modalCenter').modal('hide');
             document.getElementById('sendButton').style.backgroundColor = '';
             document.getElementById('sendButton').style.border = '';
         }
